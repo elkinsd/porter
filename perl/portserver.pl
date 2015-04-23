@@ -25,7 +25,7 @@ while(my $line = <STDIN>) {
 
 		print "PID: $$\n\n";
 		print "MSG: $message\n\n";
-		select(undef,undef,undef,0.5);
+#		select(undef,undef,undef,0.5);
 		print "OK\nEOL\n";
 
 		$message = "";

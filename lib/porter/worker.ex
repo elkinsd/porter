@@ -34,7 +34,7 @@ defmodule Porter.Worker do
     end
   end
 
-  def handle_info({:task, {pid,ref} = from, data}, state) do
+  def handle_info({:task, {pid,_ref} = _from, data}, state) do
     ##IO.puts "Got task: #{inspect from} #{inspect data}"
     ##:timer.sleep(rand(150))
 

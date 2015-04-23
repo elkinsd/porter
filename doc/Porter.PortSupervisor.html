@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Porter.Worker</title>
+    <title>Porter.PortSupervisor</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
     <link rel="stylesheet" href="css/elixir.css" type="text/css" media="screen" charset="utf-8" />
@@ -25,9 +25,9 @@
     </script>
 
     <section id="content">
-      <div class="breadcrumbs">porter v0.0.1 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Porter.html">Porter</a> &rarr; <a href="Porter.Worker.html">Worker</a></div>
+      <div class="breadcrumbs">porter v0.0.1 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Porter.html">Porter</a> &rarr; <a href="Porter.PortSupervisor.html">PortSupervisor</a></div>
       <h1>
-        Porter.Worker
+        Porter.PortSupervisor
         
       </h1>
 
@@ -51,19 +51,14 @@
         <h2 id="summary">Summary<span class="detail_header_links"><a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a></span></h2>
         <table class="summary">
           <tr>
-  <td class="summary_signature"><a href="#rand/1">rand(limit)</a></td>
+  <td class="summary_signature"><a href="#init/1">init(atom1)</a></td>
+  
+    <td class="summary_synopsis"><p>Callback implementation for <code>c::supervisor.init/1</code></p>
+</td>
   
 </tr>
 <tr>
-  <td class="summary_signature"><a href="#start_link/2">start_link(command, opts \\ [])</a></td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#task_loop/0">task_loop()</a></td>
-  
-</tr>
-<tr>
-  <td class="summary_signature"><a href="#task_loop/1">task_loop(acc)</a></td>
+  <td class="summary_signature"><a href="#start_link/1">start_link(opts \\ [])</a></td>
   
 </tr>
 
@@ -76,56 +71,27 @@
         <section id="functions_details" class="details_list">
           <h2>Functions</h2>
           <section class="detail">
-  <div class="detail_header" id="rand/1">
-    <span class="signature"><strong>rand(limit)</strong></span>
+  <div class="detail_header" id="init/1">
+    <span class="signature"><strong>init(atom1)</strong></span>
     <div class="detail_header_links">
       <span class="detail_type">(function)</span>
-      <a href="#rand/1" class="detail_link" title="Link to this function">#</a>
+      <a href="#init/1" class="detail_link" title="Link to this function">#</a>
       <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
     </div>
   </div>
   
   <section class="docstring">
-    
+    <p>Callback implementation for <code>c::supervisor.init/1</code>.</p>
+
   </section>
   
 </section>
 <section class="detail">
-  <div class="detail_header" id="start_link/2">
-    <span class="signature"><strong>start_link(command, opts \\ [])</strong></span>
+  <div class="detail_header" id="start_link/1">
+    <span class="signature"><strong>start_link(opts \\ [])</strong></span>
     <div class="detail_header_links">
       <span class="detail_type">(function)</span>
-      <a href="#start_link/2" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
-    </div>
-  </div>
-  
-  <section class="docstring">
-    
-  </section>
-  
-</section>
-<section class="detail">
-  <div class="detail_header" id="task_loop/0">
-    <span class="signature"><strong>task_loop()</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#task_loop/0" class="detail_link" title="Link to this function">#</a>
-      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
-    </div>
-  </div>
-  
-  <section class="docstring">
-    
-  </section>
-  
-</section>
-<section class="detail">
-  <div class="detail_header" id="task_loop/1">
-    <span class="signature"><strong>task_loop(acc)</strong></span>
-    <div class="detail_header_links">
-      <span class="detail_type">(function)</span>
-      <a href="#task_loop/1" class="detail_link" title="Link to this function">#</a>
+      <a href="#start_link/1" class="detail_link" title="Link to this function">#</a>
       <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
     </div>
   </div>

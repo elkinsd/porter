@@ -18,7 +18,7 @@ defmodule Porter.PortServer do
     {:ok, %{port: port, listener: listener}}
   end
 
-  def handle_call({:command, data}, {pid,ref} = from , state) do
+  def handle_call({:command, data}, {pid,_ref} = from , state) do
     Port.command(state.port, "CALLER: #{inspect from}\n")
     Port.command(state.port, "#{inspect data}\n")
     Port.command(state.port, "EOL\n")
